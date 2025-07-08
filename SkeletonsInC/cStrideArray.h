@@ -18,7 +18,6 @@ Array* shape_arange(size_t maxsize, size_t rows, size_t cols);
 Array* copy_transpose(Array* Arr);
 int shallow_transpose(Array* Arr);
 int reshape(Array* arr, size_t new_rows, size_t new_cols) ;
-Array* slice(const Array* arr, size_t row_start, size_t row_end, size_t col_start, size_t col_end) ;
 void pArr(Array* Arr, bool do_free);
 void FreeArr(Array* Arr);
 Array* get_row(Array* arr, size_t which_row, bool transposed);
