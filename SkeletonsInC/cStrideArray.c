@@ -26,12 +26,15 @@ void pArr(Array* Arr, bool do_free){
 
 };
 void FreeArr(Array* Arr){
+    if (Arr==NULL)
+        return;
     free(Arr->arr);
+    Arr->arr = NULL;
     free(Arr);
+    Arr = NULL;
     return;
 
 };
-
 
 
 Array* fill(size_t rows, size_t cols, float fill_with){
